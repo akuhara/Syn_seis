@@ -11,9 +11,10 @@ Earthquake Research Institute, The University of Tokyo
 2. `make`
 
 It requires FFTW3 and SAC libraries on our machine. The paths for these libraries must be specified in `src/Makefile`.
+If the SAC commands are already available, `sac-config --cflags --libs sacio` will display the paths to the SAC library.
 
 ## Sample run
-1. `./bin/syn_seis < sample/test.in`
+1. `bin/syn_seis < sample/test.in`
 
 ## How to use
 The program reads parameters and a velocity model from the standard input. The formats are:
