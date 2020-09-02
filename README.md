@@ -6,6 +6,8 @@ Software to compute synthetic seismograms for an incidence P or SV wave to 1-D l
 
 Earthquake Research Institute, The University of Tokyo 
 
+<img src="./img/test_output.png" width="400">
+
 ## Installation 
 1. `cd src`
 2. `make`
