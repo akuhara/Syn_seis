@@ -12,13 +12,14 @@ Earthquake Research Institute, The University of Tokyo
 1. `cd src`
 2. `make`
 
-It requires FFTW3 and SAC libraries on our machine. The paths for these libraries must be specified in `src/Makefile`.
+It requires [FFTW](http://www.fftw.org/) and [SAC](http://ds.iris.edu/ds/nodes/dmc/software/downloads/sac/) libraries on your machine. The paths for these libraries must be specified in `src/Makefile`.
 If the SAC commands are already available, `sac-config --cflags --libs sacio` will display the paths to the SAC library.
 
-## Sample run
-1. `bin/syn_seis < sample/test.in`
+## Test run
+`bin/syn_seis < sample/test.in`
 
 * Don't forget to put "<".
+* After this command, you will get output files `test.r` and `test.z`. 
 
 ## How to use
 The program reads parameters and a velocity model from the standard input. The formats are:
