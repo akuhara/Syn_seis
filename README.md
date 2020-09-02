@@ -17,7 +17,8 @@ If the SAC commands are already available, `sac-config --cflags --libs sacio` wi
 
 ## Sample run
 1. `bin/syn_seis < sample/test.in`
-Don't forget to put "<".
+
+* Don't forget to put "<".
 
 ## How to use
 The program reads parameters and a velocity model from the standard input. The formats are:
