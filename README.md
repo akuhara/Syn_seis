@@ -17,6 +17,7 @@ If the SAC commands are already available, `sac-config --cflags --libs sacio` wi
 
 ## Sample run
 1. `bin/syn_seis < sample/test.in`
+Don't forget to put "<".
 
 ## How to use
 The program reads parameters and a velocity model from the standard input. The formats are:
@@ -27,6 +28,6 @@ The program reads parameters and a velocity model from the standard input. The f
 * Lines 4...: [Vp (km/s)] [Vs (km/s)] [density (g/cm^3)] [thickness (km)]
 
 ### Note: 
-* For ocean layer set Vs < 0 of the topmost layer. In this case, the reciver is assumed to be placed on the seafloor (i.e., layer 1-2 boundary).
+* For ocean setting, set Vs < 0 for the topmost layer. In this case, the receiver is assumed to be placed on the seafloor (i.e., layer 1-2 boundary).
 * Thickness of the bottom layer is just ignored.
-* Output is SAC format. The t=0 corresponds to the timing when incidence wave passes through the deepest layer interface (i.e., top of the half-space). 
+* Output is SAC format. t=0 corresponds to the timing when incidence wave passes through the deepest layer interface (i.e., top of the half-space). 
